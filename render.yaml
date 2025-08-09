@@ -33,7 +33,7 @@ services:
       - key: DB_POSTGRESDB_SCHEMA
         value: public
       - key: WEBHOOK_URL
-        value: https://your-n8n-app.onrender.com/
+        value: https://main.apxdatahub.com/
       - key: N8N_ENCRYPTION_KEY
         value: YOUR_ENCRYPTION_KEY_HERE
       - key: GENERIC_TIMEZONE
@@ -54,6 +54,8 @@ services:
         value: false
       - key: EXECUTIONS_DATA_SAVE_MANUAL_EXECUTIONS
         value: false
+      - Key: NODE_PATH
+        Value: /home/node/.n8n/node_modules
     disk:
       name: n8n-disk
       mountPath: /home/node/.n8n
